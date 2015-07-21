@@ -1,0 +1,45 @@
+@charset "utf-8";
+/* 通用css */
+body{ background:#f3f3f4; font-family:"Microsoft YaHei",Tahoma,Arial,SimSun;}
+html,body{ height:100%;}
+.div980{ width:980px; margin:0 auto;}
+.divAll{ width:100%;}
+.ovf{ overflow:hidden;_display:inline-block}
+.clearfix:after{clear: both;content: ".";display: block;height: 0;visibility: hidden;}
+.click-color{ color:#ed5565 !important;}
+.click-color:hover{ color:#1c84c6 !important;}
+.fl{ float:left; !important}
+.fr{ float:right; !important}
+.mb10{margin-bottom:10px !important;}
+.mb20{ margin-bottom:20px !important;}
+.mt10{ margin-top:10px !important;}
+.mt20{ margin-top:20px !important;}
+.pt10{ padding-top:10px !important;}
+.pt20{ padding-top:20px !important;}
+.pd10{ padding-bottom:10px !important;}
+.pd20{ padding-bottom:20px !important;}
+.cursor{ cursor:pointer !important;}
+.font-size-8{font-size:8px !important;}
+.font-size-10{ font-size:10px !important;}
+.font-size-12{ font-size:12px !important;}
+.font-size-14{ font-size:14px !important;}
+.font-size-16{ font-size:16px !important;}
+.font-size-18{ font-size:18px !important;}
+.tatc{ text-align:center;}
+.tatr{ text-align:right;}
+.tatl{ text-align:left;}
+
+/*左侧导航*/
+.left-nav-box{ background:#2f4050;}
+.JMenu{ list-style:none; margin:0; padding:0;}
+.JMenu a:hover{ opacity:1;}
+.JMenu >li a{ display:block; padding:14px 20px 14px 25px; color:#fff; opacity:0.7;}
+.JMenu >li >ul{ display:none;}
+.JMenu.next a{padding:7px 10px 7px 40px;}
+.JMenu.start >li.active{border-left: 4px solid #19aa8d;}
+.JMenu >li.active{ background:#293846;-webkit-transition: all 0.5s;-moz-transition: all 0.5s;-o-transition: all 0.5s;transition: all 0.5s;}
+.JMenu >li.active >a{opacity:1;}
+.JMenu >li:hover{background:#293846;}
+
+
+

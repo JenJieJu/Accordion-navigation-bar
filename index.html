@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <title>手风琴导航</title>
+
+    <!--主题css-->
+    <link rel="stylesheet" href="theme.css" type="text/css" />
+	<script src="jquery.min.js" type="text/javascript"></script>
+    
+  </head>
+<body>
+
+
+<div class=" left-nav-box" style="width:250px;">
+    <ul class="JMenu start">
+        <li><a href=" javascript:void(0)">首页</a></li>
+        <li>
+            <a href=" javascript:void(0)">产品管理</a>
+            <ul class="JMenu next font-size-12">
+                <li>
+                    <a href=" javascript:void(0)">菜单2</a>
+                    <ul class="JMenu next">
+                        <li><a href=" javascript:void(0)">菜单3</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href=" javascript:void(0)">菜单1</a>
+            <ul class="JMenu next font-size-12">
+                <li>
+                    <a href=" javascript:void(0)">菜单2</a>
+                    <ul class="JMenu next ">
+                        <li><a href=" javascript:void(0)">菜单3</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+<script type="text/ecmascript">
+$(".JMenu >li >a").click(function()
+{
+	if($(this).parent("li").hasClass("active"))
+	{
+		$(this).children("i.fa").removeClass("fa-th-large")
+		JMenu($(this).parent("li"),1);
+	}
+	else
+	{
+		JMenu($(this).parent("li"),0);
+	};
+	
+});
+function JMenu(e,n)
+{
+	if(n==1)
+	{
+		e.removeClass("active").children("ul").slideUp(300);
+	}
+	else
+	{
+		e.parent("ul.JMenu").children("li.active").removeClass("active").children("ul").slideUp(300);
+		e.addClass("active").children("ul").slideDown(300);
+	}
+};
+</script>
+
+</body>
+</html>
